@@ -6,6 +6,7 @@
 ## **1. Meaning of Control Abstraction**
 A control abstraction is a generic procedure (algorithm template) that outlines the structure of a specific algorithmic strategy.
 It separates *how the greedy choice is made* from *how the algorithm is controlled*.
+The Greedy method works by making a sequence of choices, selecting the best option available at that moment (local optimum) in hopes of finding the global optimum.
 
 
 
