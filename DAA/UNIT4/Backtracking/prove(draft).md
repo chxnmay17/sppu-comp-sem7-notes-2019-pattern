@@ -89,4 +89,151 @@ $$ \mathbf{\text{Total Internal Nodes} = 2^n - 1} $$
 
 We have calculated that the sum of nodes across all levels excluding the final leaf level is exactly $2^n - 1$. Thus, the proposition is proven.
 
+
+
+---
+
+# **Proof: Full State Space Tree for Subset Sum Has (2^n - 1) Non-Leaf Nodes**
+
+### **Problem Context (Backtracking – Sum of Subsets)**
+
+* We are given a set of ( n ) elements:
+  [
+  S = {a_1, a_2, \dots, a_n}
+  ]
+* Using **backtracking**, we generate **all subsets** of ( S ) to check which of them satisfy the **sum-of-subsets** condition.
+* At each step, for element ( a_k ), we decide:
+
+  * **Include** ( a_k ), or
+  * **Exclude** ( a_k ).
+
+This decision process is represented as a **state space tree**.
+
+---
+
+## **1. Structure of the State Space Tree**
+
+1. The tree is a **binary tree**:
+
+   * Each internal node has **exactly 2 children**:
+
+     * *Left child* → Include current element
+     * *Right child* → Exclude current element
+2. The tree has **levels** from ( 0 ) to ( n ):
+
+   * **Level 0**: Root (no decision made yet)
+   * **Level 1**: Decision about ( a_1 )
+   * **Level 2**: Decision about ( a_2 )
+   * ...
+   * **Level n**: Decision about ( a_n ) completed → **leaves**
+3. Each **root-to-leaf path** corresponds to **one subset** (include/exclude each of the ( n ) elements).
+
+---
+
+## **2. Number of Nodes at Each Level**
+
+We show that:
+
+> At **level ( k )** (where ( 0 \le k \le n )), the tree has ( 2^k ) nodes.
+
+* **Level 0**:
+  Only the root → ( 2^0 = 1 ) node.
+* **Level 1**:
+  Root generates 2 children → ( 2^1 = 2 ) nodes.
+* **Level 2**:
+  Each of the 2 nodes at level 1 generates 2 children → ( 2^2 = 4 ) nodes.
+* In general:
+  Each node at level ( k ) produces 2 children at level ( k+1 ), so:
+  [
+  \text{Nodes at level } k = 2^k
+  ]
+
+So:
+
+* Level 0: ( 2^0 ) nodes
+* Level 1: ( 2^1 ) nodes
+* …
+* Level ( n-1 ): ( 2^{n-1} ) nodes
+* Level ( n ): ( 2^{n} ) nodes (**leaf nodes**)
+
+---
+
+## **3. Counting Non-Leaf Nodes**
+
+We are asked to find the number of **non-leaf nodes** (i.e., **excluding the leaf nodes**).
+
+* **Leaves** are all nodes at **level ( n )** → number of leaf nodes:
+  [
+  L = 2^n
+  ]
+* **Non-leaf nodes** are all nodes from **level 0 to level ( n-1 )**.
+
+So, total non-leaf nodes ( N ) is:
+[
+N = \sum_{k=0}^{n-1} 2^k
+]
+
+This is a **geometric series**:
+
+[
+\sum_{k=0}^{n-1} 2^k = 2^n - 1
+]
+
+Therefore:
+[
+\boxed{N = 2^n - 1}
+]
+
+So, the **full state space tree** (excluding leaf nodes) has **( 2^n - 1 ) non-leaf nodes**.
+
+---
+
+## **4. Alternative Argument (Using Full Binary Tree Property)**
+
+* The state space tree is a **full binary tree**:
+
+  * Every **internal node** has **exactly 2 children**.
+* In any full binary tree:
+  [
+  \text{Number of internal nodes} = \text{Number of leaves} - 1
+  ]
+* Here, number of leaves ( = 2^n ), hence:
+  [
+  \text{Internal (non-leaf) nodes} = 2^n - 1
+  ]
+
+---
+
+## **5. Small Diagram (Example for ( n = 3 ))**
+
+```text
+                 Level 0
+                   (root)
+                     ●
+                   /   \
+        Level 1   ●     ●
+                /  \   /  \
+       Level 2 ●   ● ●    ●
+              / \ / \ / \ / \
+       L3:   ●  ●  ● ●  ● ●  ●  (8 leaves = 2^3)
+
+Non-leaf nodes:
+Level 0: 1
+Level 1: 2
+Level 2: 4
+Total non-leaf = 1 + 2 + 4 = 7 = 2^3 - 1
 ```
+
+---
+
+## **6. Final Conclusion (Exam-Ready Statement)**
+
+> In the sum-of-subsets problem using backtracking, the **full state space tree** is a **binary tree of height ( n )**, where each level ( k ) has ( 2^k ) nodes and the last level has ( 2^n ) leaf nodes.
+> Therefore, the **total number of non-leaf nodes** (excluding leaf nodes) is:
+> [
+> \sum_{k=0}^{n-1} 2^k = 2^n - 1
+> ]
+> Hence, the full state space tree for finding the sum of subsets of ( n ) elements has **( 2^n - 1 )** non-leaf nodes.
+
+---
+
