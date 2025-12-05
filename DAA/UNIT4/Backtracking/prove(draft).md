@@ -20,6 +20,7 @@
 The tree grows by depth. At depth $n$, we have made decisions for all $n$ items, resulting in the leaf nodes (final subsets).
 
 ```mermaid
+
 graph TD
     Root((Start)) --> L1_1((x1=1))
     Root --> L1_0((x1=0))
@@ -28,13 +29,14 @@ graph TD
     L1_0 --> L2_3((x2=1))
     L1_0 --> L2_4((x2=0))
     
-    style Root fill:#f9f,stroke:#333,stroke-width:2px
-    style L1_1 fill:#fff,stroke:#333
-    style L1_0 fill:#fff,stroke:#333
-    style L2_1 fill:#ccc,stroke:#333,stroke-dasharray: 5 5
-    style L2_2 fill:#ccc,stroke:#333,stroke-dasharray: 5 5
-    style L2_3 fill:#ccc,stroke:#333,stroke-dasharray: 5 5
-    style L2_4 fill:#ccc,stroke:#333,stroke-dasharray: 5 5
+    style Root fill:#9c27b0,stroke:#333,stroke-width:2px 
+    style L1_1 fill:#fff,stroke:#333  
+    style L1_0 fill:#fff,stroke:#333  
+    style L2_1 fill:#f5f5f5,stroke:#333,stroke-dasharray: 5 5  
+    style L2_2 fill:#f5f5f5,stroke:#333,stroke-dasharray: 5 5   
+    style L2_3 fill:#f5f5f5,stroke:#333,stroke-dasharray: 5 5
+    style L2_4 fill:#f5f5f5,stroke:#333,stroke-dasharray: 5 5 
+
 ````
 
 *Note: In the diagram above, the solid nodes represent internal nodes (decisions made), and the dashed/shaded nodes represent the next level (eventually leading to leaves).*
