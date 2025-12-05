@@ -1,5 +1,4 @@
 <img width="586" height="43" alt="image" src="https://github.com/user-attachments/assets/e1fe4365-127a-4eb9-8448-97e041fd19fd" />
-Here is the answer formatted in Markdown for GitHub, adhering to your preference for high-contrast diagrams.
 
 
 # Approximation Algorithms & Performance Ratio
