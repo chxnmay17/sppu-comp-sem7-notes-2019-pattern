@@ -1,3 +1,4 @@
+<img width="727" height="70" alt="image" src="https://github.com/user-attachments/assets/f0a0bef1-d72b-4d06-b1b0-44018ab39db6" />
 
 # Proof: State Space Tree Size for Sum of Subsets
 
