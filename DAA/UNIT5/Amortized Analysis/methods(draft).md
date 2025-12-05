@@ -1,5 +1,5 @@
 <img width="511" height="43" alt="image" src="https://github.com/user-attachments/assets/8a9a8ce2-c50a-4b19-9485-4b5d4993ab9d" />
-
+8mrks
 # Methods of Amortized Analysis
 
 ## 1. Definition
