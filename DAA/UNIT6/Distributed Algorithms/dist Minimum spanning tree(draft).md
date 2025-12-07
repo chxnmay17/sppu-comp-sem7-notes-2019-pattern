@@ -1,5 +1,5 @@
 <img width="524" height="101" alt="image" src="https://github.com/user-attachments/assets/820f9a5c-62e5-47e2-a382-9c203f3c5a69" />
-
+5mks
 # Distributed Minimum Spanning Tree (GHS Algorithm)
 
 ## 1. Algorithm Overview (GHS Algorithm)
