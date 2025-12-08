@@ -1,4 +1,5 @@
 <img width="409" height="46" alt="image" src="https://github.com/user-attachments/assets/250fb4a3-821b-4b8f-910b-c83af8ea504d" />
+
 ### **Q: What are the benefits of professional forensics methodology? What are steps taken by computer forensics specialist?**
 
 #### **1. Benefits of Professional Forensics Methodology**
