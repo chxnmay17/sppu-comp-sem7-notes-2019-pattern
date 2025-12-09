@@ -92,17 +92,14 @@ txt
 
 ### Architecture and Components
 
-The Hyperledger architecture has nine key components:
+The Hyperledger architecture key components:
 
 1.  **Consensus Layer:** Responsible for verifying blocks of transactions and agreeing on their order.
 2.  **Smart Contract Layer:** Responsible for transaction processing (proposal takeover, execution, and validation).
 3.  **Communication Layer:** Responsible for P2P transport.
-4.  **Data Store Abstraction:** Responsible for different data stores which can be used by other modules.
-5.  **Crypto Abstraction:** Responsible for crypto algorithms.
-6.  **Identity Service:** Enables the establishment of a root of trust, including enrollment and registration of identities, and authentication and authorization during network setup.
-7.  **Policy Service:** Responsible for policy management.
-8.  **APIs:** Required for interactions with applications.
-9.  **Inter-operation Service:** In charge of supporting the inter-operation between different blockchain instances.
+4.  **Identity Service:** Enables the establishment of a root of trust, including enrollment and registration of identities, and authentication and authorization during network setup.
+5.  **APIs:**  It enables external applications and clients to interface with the blockchain.
+
 
 ### Hyperledger Fabric
 
