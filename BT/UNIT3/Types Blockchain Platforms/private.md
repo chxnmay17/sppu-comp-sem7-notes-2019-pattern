@@ -60,3 +60,17 @@ Since all nodes are authenticated and legally bound to the organization, the env
 ### **7. Next Step**
 
 Would you like me to create a comparison table (Difference between Public vs. Private Blockchain) to complete this topic for your notes?
+### **Advantages of Private Blockchain:**
+
+1. **Faster** transactions and **lower costs**.
+2. **Privacy** and control over who participates.
+3. **Customizable** consensus and governance.
+4. **Scalable** with fewer nodes.
+
+### **Disadvantages of Private Blockchain:**
+
+1. **Centralized**, reducing decentralization.
+2. **Security risks** from fewer participants.
+3. Relies on **trust** in a few validators.
+4. **Less transparency** than public blockchains.
+5. **Limited network effects**.
