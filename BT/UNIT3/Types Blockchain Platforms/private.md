@@ -41,6 +41,7 @@ Since all nodes are authenticated and legally bound to the organization, the env
 
   * **CFT (Crash Fault Tolerance):** Algorithms like **RAFT** or **Paxos**. These ensure the system keeps working if a component fails, but don't protect against malicious actors (as malicious internal actors are less likely).
   * **BFT (Byzantine Fault Tolerance):** Algorithms like **PBFT** are used if some internal defense against malicious nodes is required.
+<img width="427" height="80" alt="image" src="https://github.com/user-attachments/assets/4b4fef62-d060-460b-9ff9-94afcf0cb661" />
 
 ### **5. Advantages and Limitations**
 
