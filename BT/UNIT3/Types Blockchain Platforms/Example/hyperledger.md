@@ -84,6 +84,9 @@ graph TD
 
 Hyperledger is the **Linux of Blockchain**: a modular, permissioned, enterprise-focused umbrella project. Its flagship framework, **Fabric**, utilizes a unique architecture of Channels, MSPs, and an Execute-Order-Validate flow to solve business privacy and scalability needs.
 
+
+
+---
 ---
 txt
 
