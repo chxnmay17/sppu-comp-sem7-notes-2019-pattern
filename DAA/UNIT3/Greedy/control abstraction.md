@@ -27,7 +27,6 @@ We define the following abstract functions:
 * `Select(...)` → chooses the **next candidate** according to the **greedy criterion**
 * `Feasible(S, x)` → checks if adding `x` to **current solution** `S` keeps it **feasible**
 * `Solution(S)` → tests whether `S` is a **complete solution**
-* `Objective(S)` → computes the **value** (cost/profit) of solution `S`
 
 ---
 
