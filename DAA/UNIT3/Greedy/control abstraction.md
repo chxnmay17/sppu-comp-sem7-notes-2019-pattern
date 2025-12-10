@@ -101,9 +101,9 @@ Greedy(A)   // A: set or list of candidates
 Let:
 
 * There be **n candidates** in `A`
-* `Select(A)` takes time: ( T_{\text{select}} )
-* `Feasible(S, x)` takes time: ( T_{\text{feasible}} )
-* `Solution(S)` takes time: ( T_{\text{solution}} )
+* `Select(A)` takes time: ( $T_{\text{select}}$ )
+* `Feasible(S, x)` takes time: ( $T_{\text{feasible}}$ )
+* `Solution(S)` takes time: ( $T_{\text{solution}}$ )
 
 #### **Number of calls (worst case)**
 
