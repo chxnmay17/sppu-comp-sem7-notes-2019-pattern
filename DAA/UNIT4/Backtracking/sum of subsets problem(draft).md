@@ -33,16 +33,26 @@ To minimize unnecessary computations, we stop generating nodes if:
 * **Global:** $X$ (Solution vector), $W$ (Weights), $M$ (Target).
 
 ```cpp
-1. X[k] = 1;  // Generate Left Child (Include w[k])
-2. if (s + W[k] == M) then
-3.     Print X[1...k];  // Solution Found
-4. else if (s + W[k] + W[k+1] <= M) then
-5.     SumOfSub(s + W[k], k + 1, r - W[k]);
+Algorithm SumOfSubsets(s, k, r) {
+    // 1. Generate Left Child (Include w[k])
+    x[k] = 1;
+    
+    // Check if Including leads to a Solution
+    if (s + w[k] == M) {
+        print(x[1...k]); // Solution Found
+    }
+    // Check if Promising to continue Left
+    else if (s + w[k] + w[k+1] <= M) {
+        SumOfSubsets(s + w[k], k + 1, r - w[k]);
+    }
 
-6. // Backtrack: Generate Right Child (Exclude w[k])
-7. if ((s + r - W[k] >= M) and (s + W[k+1] <= M)) then
-8.     X[k] = 0;
-9.     SumOfSub(s, k + 1, r - W[k]);
+    // 2. Generate Right Child (Exclude w[k])
+    // Pruning: Can we still reach M without w[k]?
+    if ((s + r - w[k] >= M) && (s + w[k+1] <= M)) {
+        x[k] = 0;
+        SumOfSubsets(s, k + 1, r - w[k]);
+    }
+}
 ````
 
 -----
