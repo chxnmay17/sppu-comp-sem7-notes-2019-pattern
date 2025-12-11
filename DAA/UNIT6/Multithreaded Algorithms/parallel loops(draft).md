@@ -1,7 +1,5 @@
 <img width="458" height="46" alt="image" src="https://github.com/user-attachments/assets/024c36ac-b6b5-4119-be3e-3dbc3e77d500" />
-Here is the answer formatted in Markdown for GitHub, adhering to strict syntax rules for diagrams.
 
-````markdown
 # Multithreaded Algorithms: Analysis, Parallel Loops, and Race Conditions
 
 ## 1. Analyzing Multithreaded Algorithms
