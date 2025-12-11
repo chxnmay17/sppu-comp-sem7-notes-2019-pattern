@@ -36,34 +36,43 @@ Backtracking solves this by incrementally building the solution vector one verte
 * **Global:** $G$ (Graph), $X$ (Solution array), $m$ (Colors).
 
 ```cpp
-Algorithm mColoring(k) {
-    repeat {
-        // Generate next valid color
-        NextValue(k); 
+mColoring(k) {
+    // Try to assign a color to vertex k
+    TryNextColor(k); 
+    
+    // If no valid color could be assigned, backtrack
+    if (X[k] == 0) return; 
+    
+    // If all vertices are colored, print the solution
+    if (k == n) 
+        Print(X); // Solution found
+    
+    // Otherwise, move to the next vertex
+    else 
+        mColoring(k + 1); // Proceed to next vertex
+}
+TryNextColor(k) {
+    // Try all colors from 1 to m
+    for each color from 1 to m do {
+        X[k] = color; // Assign the color to vertex k
         
-        if (X[k] == 0) return; // No color possible, Backtrack
-        
-        if (k == n) 
-            Print(X); // Solution found
-        else 
-            mColoring(k+1); // Proceed to next vertex
-            
-    } until (false)
+        // Check if assigning this color causes a conflict with adjacent vertices
+        conflict = false;
+        for each vertex j adjacent to k do {
+            if (X[k] == X[j]) { 
+                conflict = true; 
+                break; // Conflict found, stop checking further
+            }
+        }
+
+        // If no conflict, this color is valid for vertex k
+        if (!conflict) return; // Valid color found, exit the loop
+    }
+    
+    // If no valid color found, set X[k] to 0 and backtrack
+    X[k] = 0;
 }
 
-Algorithm NextValue(k) {
-    repeat {
-        X[k] = (X[k] + 1) mod (m+1); // Try next color
-        if (X[k] == 0) return;
-        
-        // Check adjacency constraints
-        for j = 1 to n do {
-            if (Edge(k, j) exists AND X[k] == X[j])
-                break; // Conflict detected
-        }
-        if (j == n+1) return; // No conflict, valid color
-    } until (false)
-}
 ````
 
 -----
