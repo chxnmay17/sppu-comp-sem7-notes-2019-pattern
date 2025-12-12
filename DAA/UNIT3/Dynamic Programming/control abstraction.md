@@ -32,6 +32,7 @@ We illustrate this using the **Fibonacci number computation**.
 5. **Construct Final Solution**
    The last-filled entry (usually `DP[n]` or `DP[n][m]`) gives the optimal solution.
 
+<img width="497" height="813" alt="image" src="https://github.com/user-attachments/assets/72c5c6d7-158c-4cab-ab7e-2124c17aa639" />
 
 ---
 <img width="419" height="252" alt="image" src="https://github.com/user-attachments/assets/76f9a1ef-fb1c-49b9-b5e9-8b8abdfefa64" />
