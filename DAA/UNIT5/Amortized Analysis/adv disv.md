@@ -57,6 +57,27 @@
 
 ---
 
+### **Advantages of the Potential Method:**
+
+1. **Tracks Future Costs**: Helps handle future expensive operations by saving potential in advance.
+2. **Works for Complex Operations**: Useful for problems where costs vary over time (e.g., dynamic array resizing).
+3. **Accurate**: Provides an accurate way to measure the total cost of operations when the costs aren't uniform.
+4. **No Credit Management**: Unlike the Accounting method, no need to store credits for each operation.
+5. **Flexible**: You can define the potential function to fit the problem, making it adaptable.
+
+### **Disadvantages of the Potential Method:**
+
+1. **Harder to Understand**: More complex and requires careful definition of the potential function.
+2. **Requires a Good Potential Function**: Success depends on how well you define the potential; a bad choice can lead to inaccurate analysis.
+3. **Less Transparency**: Doesn’t give immediate insight into individual operation costs.
+4. **Can Be Overkill**: For simpler problems, it may be more complicated than necessary.
+5. **Sensitive to Potential Function Choice**: A poor potential function can lead to incorrect results.
+
+
+
+
+
+---
 # **Summary Table**
 
 | Method                 | Advantages                                                                                         | Disadvantages                                                                                                    |
